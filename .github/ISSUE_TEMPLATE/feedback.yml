@@ -1,0 +1,43 @@
+name: Mirror feedback
+description: Report a bug, suggest an improvement, or share feedback on the Mirror CLI beta.
+labels: [early-access]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying Mirror! This tracker is intended for public feedback.
+        Do not include credentials, private code, personal information, or sensitive screenshots.
+        We will follow up here on GitHub; no email address is needed.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of feedback
+      options:
+        - Bug report
+        - Feature request
+        - Other feedback
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+      description: What went wrong, or what would you like to improve? For bugs, include what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: If this is a bug, how can we reproduce it? Leave blank if not applicable.
+  - type: input
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Mirror version (if known), operating system, and terminal app.
+      placeholder: "Mirror version, macOS/Linux, terminal app"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)
+      description: Drag images into this field. Check that they contain no private information.
