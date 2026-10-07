@@ -13,15 +13,15 @@ main() (
         return 1
       fi
       wheel='mirror-0.1.0-py3-none-macosx_15_0_arm64.whl'
-      checksum='d65118f772f08b358bd901728f12193de250eeba5d2385a7e6bc16a1c85b3f0a'
+      checksum='893e2d941b70939408fc080a5a3f43cf423f103eb4d1a9863b638d181b9fff38'
       ;;
     Linux-x86_64)
       wheel='mirror-0.1.0-py3-none-manylinux_2_28_x86_64.whl'
-      checksum='aad874a8238ce24fca7711912985c482d43fd7ec1f69e9a306e859bbf60d7554'
+      checksum='8568d408a3aa0c60a469294021e8d6cbc1675b8bd9b68e4a88327f9652490254'
       ;;
     Linux-aarch64)
       wheel='mirror-0.1.0-py3-none-manylinux_2_28_aarch64.whl'
-      checksum='ec3710e10f6b06accad75510600b42671415ae20c55add977f08b05a1af1cd52'
+      checksum='bee426fbd3b2be2d1e0e9b2adc62001c1c896cb535590b1903d2e539aa5d8cc3'
       ;;
     *)
       echo 'Mirror supports macOS 15+ on Apple Silicon and Linux on x86-64 or ARM64.' >&2
